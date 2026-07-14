@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+cp -a /autograder/submission/. /autograder/source/
+
+cd /autograder/source
+
+python3 run_tests.py > /autograder/results/results.json
+
+expect password_checking.exp
+
+

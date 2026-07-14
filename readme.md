@@ -5,3 +5,4 @@
 课程网站：[cs51p](http://www.cs.pomona.edu/classes/cs51p)
 
 - 实验
+  - 部分实验老师有意（或无意）给出了solution
