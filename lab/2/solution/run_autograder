@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+cp /autograder/submission/assign3.py /autograder/source/assign3.py
+
+cd /autograder/source
+
+expect chatbot_interaction.exp
+
+python3 run_tests.py > /autograder/results/results.json
+
+

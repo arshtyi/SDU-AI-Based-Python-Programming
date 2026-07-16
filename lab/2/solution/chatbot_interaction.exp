@@ -1,0 +1,54 @@
+#!/usr/local/bin/expect
+
+set passed 0
+
+puts "chatbot() autograder"
+puts "=============================="
+
+spawn python3 -c "from assign3 import *; chatbot()"
+expect {
+	"*elcome*" {
+	    set passed [expr $passed + 2]
+	    puts "#1 chatbot can run with no syntax error, + 2 point"
+	}
+}
+
+send -- "how are you\r"
+expect {
+	"*only respond to question*" {
+	    set passed [expr $passed + 1]
+	    puts "#2 correctly handle non-question input, + 1 point"
+	}
+	default {
+	    puts "#2 failed to handle non-question input"
+	}
+}
+
+send -- "great?\r"
+expect {
+	"Yeah." {
+	    set passed [expr $passed + 1]
+	    puts "#3 correctly handle question with an answer, + 1 point"
+	}
+	default {
+        puts "#3 failed to handle question with an answer"
+	}
+}
+
+send -- "are you a robot?\r"
+expect {
+	"I don't know." {
+	    set passed [expr $passed + 1]
+	    puts "#4 correctly handle question without an answer, + 1 point"
+	}
+	default {
+        puts "#4 failed to handle question without an answer"
+	}
+}
+
+puts "=============================="
+puts "Total: $passed points"
+
+exit 0
+
+expect eof
