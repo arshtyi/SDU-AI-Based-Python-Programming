@@ -1,0 +1,157 @@
+li2022diffusionlm:
+  type: article
+  title:
+    value: "Diffusion-LM Improves Controllable Text Generation"
+    verbatim: true
+  author:
+    - "Li, Xiang Lisa"
+    - "Thickstun, John"
+    - "Gulrajani, Ishaan"
+    - "Liang, Percy"
+    - "Hashimoto, Tatsunori B."
+  date: 2022-05-27
+  serial-number:
+    arxiv: "2205.14217"
+  url: "https://arxiv.org/abs/2205.14217"
+  parent:
+    type: repository
+    title: arXiv
+
+gong2022diffuseq:
+  type: article
+  title:
+    value: "DiffuSeq: Sequence to Sequence Text Generation with Diffusion Models"
+    verbatim: true
+  author:
+    - "Gong, Shansan"
+    - "Li, Mukai"
+    - "Feng, Jiangtao"
+    - "Wu, Zhiyong"
+    - "Kong, Lingpeng"
+  date: 2022-10-17
+  serial-number:
+    arxiv: "2210.08933"
+  url: "https://arxiv.org/abs/2210.08933"
+  parent:
+    type: repository
+    title: arXiv
+
+lou2023sedd:
+  type: article
+  title:
+    value: "Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution"
+    verbatim: true
+  author:
+    - "Lou, Aaron"
+    - "Meng, Chenlin"
+    - "Ermon, Stefano"
+  date: 2023-10-25
+  serial-number:
+    arxiv: "2310.16834"
+  url: "https://arxiv.org/abs/2310.16834"
+  parent:
+    type: repository
+    title: arXiv
+
+sahoo2024masked:
+  type: article
+  title:
+    value: "Simple and Effective Masked Diffusion Language Models"
+    verbatim: true
+  author:
+    - "Sahoo, Subham Sekhar"
+    - "Arriola, Marianne"
+    - "Schiff, Yair"
+    - "Gokaslan, Aaron"
+    - "Marroquin, Edgar"
+    - "Chiu, Justin T."
+    - "Rush, Alexander"
+    - "Kuleshov, Volodymyr"
+  date: 2024-06-11
+  serial-number:
+    arxiv: "2406.07524"
+  url: "https://arxiv.org/abs/2406.07524"
+  parent:
+    type: repository
+    title: arXiv
+
+nie2025llada:
+  type: article
+  title:
+    value: "Large Language Diffusion Models"
+    verbatim: true
+  author:
+    - "Nie, Shen"
+    - "Zhu, Fengqi"
+    - "You, Zebin"
+    - "Zhang, Xiaolu"
+    - "Ou, Jingyang"
+    - "Hu, Jun"
+    - "Zhou, Jun"
+    - "Lin, Yankai"
+    - "Wen, Ji-Rong"
+    - "Li, Chongxuan"
+  date: 2025-02-14
+  serial-number:
+    arxiv: "2502.09992"
+  url: "https://arxiv.org/abs/2502.09992"
+  parent:
+    type: repository
+    title: arXiv
+
+ye2025dream:
+  type: article
+  title:
+    value: "Dream 7B: Diffusion Large Language Models"
+    verbatim: true
+  author:
+    - "Ye, Jiacheng"
+    - "Xie, Zhihui"
+    - "Zheng, Lin"
+    - "Gao, Jiahui"
+    - "Wu, Zirui"
+    - "Jiang, Xin"
+    - "Li, Zhenguo"
+    - "Kong, Lingpeng"
+  date: 2025-08-21
+  serial-number:
+    arxiv: "2508.15487"
+  url: "https://arxiv.org/abs/2508.15487"
+  parent:
+    type: repository
+    title: arXiv
+
+wu2025fastdllm:
+  type: article
+  title:
+    value: "Fast-dLLM: Training-free Acceleration of Diffusion LLM by Enabling KV Cache and Parallel Decoding"
+    verbatim: true
+  author:
+    - "Wu, Chengyue"
+    - "Zhang, Hao"
+    - "Xue, Shuchen"
+    - "Liu, Zhijian"
+    - "Diao, Shizhe"
+    - "Zhu, Ligeng"
+    - "Luo, Ping"
+    - "Han, Song"
+    - "Xie, Enze"
+  date: 2025-05-28
+  serial-number:
+    arxiv: "2505.22618"
+  url: "https://arxiv.org/abs/2505.22618"
+  parent:
+    type: repository
+    title: arXiv
+
+google2026diffusiongemma:
+  type: web
+  title:
+    value: "DiffusionGemma"
+    verbatim: true
+  author:
+    name: "Google DeepMind"
+  date: 2026-06
+  url:
+    value: "https://deepmind.google/models/gemma/diffusiongemma/"
+    date: 2026-07-17
