@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# cp /autograder/submission/creditcard.py /autograder/source/creditcard.py
+# cp /autograder/submission/creditcard_part1.py /autograder/source/creditcard_part1.py
+
+cp -a /autograder/submission/. /autograder/source/
+
+cd /autograder/source
+
+python3 run_tests.py > /autograder/results/results.json
+
+echo
+echo "========================="
+echo "ppm_modify_tester.py"
+echo "========================="
+python3 ppm_modify_tester.py
+
+
+
+
+

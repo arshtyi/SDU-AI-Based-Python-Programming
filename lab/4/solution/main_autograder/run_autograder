@@ -1,0 +1,82 @@
+#!/usr/bin/env bash
+
+
+echo
+echo
+echo
+echo "========================="
+echo "pomona_negate"
+echo "========================="
+python3 ppm_modify.py << EOF
+pomona.ppm
+pomona_negate.ppm
+1
+EOF
+echo
+echo
+
+
+echo
+echo
+echo
+echo "========================="
+echo "pomona_grey"
+echo "========================="
+python3 ppm_modify.py << EOF
+pomona.ppm
+pomona_grey.ppm
+2
+EOF
+echo
+echo
+
+
+echo
+echo
+echo
+echo "========================="
+echo "pomona_remove"
+echo "========================="
+python3 ppm_modify.py << EOF
+pomona.ppm
+pomona_remove_red.ppm
+3
+EOF
+echo
+echo
+
+
+echo
+echo
+echo
+echo "========================="
+echo "pomona_remove"
+echo "========================="
+python3 ppm_modify.py << EOF
+pomona.ppm
+pomona_remove_green.ppm
+4
+EOF
+echo
+echo
+
+
+
+echo
+echo
+echo
+echo "========================="
+echo "pomona_remove"
+echo "========================="
+python3 ppm_modify.py << EOF
+pomona.ppm
+pomona_remove_blue.ppm
+5
+EOF
+echo
+echo
+
+
+
+
+
