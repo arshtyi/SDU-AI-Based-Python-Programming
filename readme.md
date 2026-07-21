@@ -5,5 +5,5 @@
 课程网站：[cs51p](http://www.cs.pomona.edu/classes/cs51p) 和 [cs51a](http://www.cs.pomona.edu/classes/cs51a)
 
 - 实验
-  - 部分实验老师有意（或无意）给出了solution
+  - 部分实验老师有意（或无意）给出了solution，但这部分结构非常乱且包含很多非工程文件，我未对其做内容处理与校验
 - presentation
