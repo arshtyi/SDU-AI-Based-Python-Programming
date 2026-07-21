@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+cp /autograder/submission/assign7.py /autograder/source/assign7.py
+
+cd /autograder/source
+
+expect sentiment_analyzer.exp
+
+python3 run_tests.py > /autograder/results/results.json

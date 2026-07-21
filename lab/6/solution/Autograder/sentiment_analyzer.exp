@@ -1,0 +1,55 @@
+#!/usr/local/bin/expect
+
+set passed 0
+set timeout 3
+
+puts "sentiment_analyzer autograder"
+puts "=============================="
+
+spawn python3 -c "from assign7 import *; sentiment_analyzer('train.positive', 'train.negative')"
+expect {
+	"*sentence*" {
+	    set passed [expr $passed + 1]
+	    puts "#1 sentiment_analyzer can run with no syntax error, + 1 point"
+	}
+}
+
+send -- "I like pizza\r"
+expect {
+	"positive" {
+	    set passed [expr $passed + 0.5]
+	    puts "#2 correctly handle positive input, + 0.5 point"
+	}
+	default {
+	    puts "#2 failed to handle positive input"
+	}
+}
+
+send -- "I hate pizza\r"
+expect {
+	"negative" {
+	    set passed [expr $passed + 0.5]
+	    puts "#3 correctly negative input, + 0.5 point"
+	}
+	default {
+        puts "#3 failed to handle negative input"
+	}
+}
+
+send -- "\r"
+expect {
+    timeout {
+        puts "#4 sentiment analyzer failed to terminate when input is blank line, + 1 point"
+    }
+	default {
+	    set passed [expr $passed + 1]
+        puts "#4 sentiment analyzer successfully terminated when input is blank line, + 1 point"
+	}
+}
+
+puts "=============================="
+puts "Total: $passed points"
+
+exit 0
+
+expect eof
