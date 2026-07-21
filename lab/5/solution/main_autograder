@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# cp /autograder/submission/creditcard.py /autograder/source/creditcard.py
+# cp /autograder/submission/creditcard_part1.py /autograder/source/creditcard_part1.py
+
+python3 stock_rain.py << EOF
+csvs/rainSeattle-2012-2017.csv
+csvs/stocks-2006-2017.csv
+MSFT
+IBM
+EOF
+
+
+
+
+
+
+
+
